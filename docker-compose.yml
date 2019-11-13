@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  paper:
+    build:
+      args:
+        VERSION: 1.14.4
+        BUILD: 226
+      context: .
+    image: hannahsfamily/mc-server-paper:1.14.4-226
+    ports:
+      - 25565:25565
+      - 25575:25575
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./bin/start-server.sh:/opt/minecraft/bin/start-server.sh
+      - ./config:/opt/minecraft/config
+      - ./logs:/opt/minecraft/logs
+      - ./overrides:/opt/minecraft/overrides
+      - ./plugins:/opt/minecraft/plugins
+      - ./server:/opt/minecraft/server

@@ -1,0 +1,6 @@
+config/
+logs/
+overrides/
+plugins/
+server/
+*.jar
