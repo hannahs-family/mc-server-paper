@@ -5,9 +5,9 @@ services:
     build:
       args:
         VERSION: 1.14.4
-        BUILD: 226
+        BUILD: 237
       context: .
-    image: hannahsfamily/mc-server-paper:1.14.4-226
+    image: hannahsfamily/mc-server-paper:1.14.4-237
     ports:
       - 25565:25565
       - 25575:25575
