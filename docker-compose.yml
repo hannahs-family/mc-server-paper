@@ -4,10 +4,10 @@ services:
   paper:
     build:
       args:
-        VERSION: 1.15
-        BUILD: 20
+        VERSION: 1.15.1
+        BUILD: 29
       context: .
-    image: hannahsfamily/mc-server-paper:1.15-20-hf.0
+    image: hannahsfamily/mc-server-paper:1.15.1-29-hf.0
     ports:
       - 25565:25565
       - 25575:25575

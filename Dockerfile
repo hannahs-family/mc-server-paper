@@ -11,8 +11,8 @@ RUN curl -fsSL https://github.com/itzg/mc-server-runner/releases/download/${RUNN
 
 FROM get-base AS get-server
 
-ARG VERSION=1.15
-ARG BUILD=20
+ARG VERSION=1.15.1
+ARG BUILD=29
 
 RUN curl -o paperclip.jar https://papermc.io/api/v1/paper/${VERSION}/${BUILD}/download
 
